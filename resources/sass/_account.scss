@@ -1,0 +1,196 @@
+.page-content {
+    .account {
+        .icontext {
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            vertical-align: middle;
+
+            .icon {
+                position: relative;
+                margin-right: 10px;
+                flex-shrink: 0;
+                -webkit-box-flex: 0;
+                flex-grow: 0;
+
+                .img-sm {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .text {
+                width: 100%;
+                color: #212529;
+            }
+        }
+
+        .btn-light-account {
+            background-color: #fff;
+            border: 1px solid #f7be74;
+
+            &.btn-icon {
+                padding: 5px 7px;
+            }
+
+            &.disabled {
+                pointer-events: none;
+                opacity: .65;
+            }
+        }
+
+        .card-group {
+            display: flex;
+
+            .bg {
+                background-color: #f6f7f9;
+            }
+        }
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #ebecf0;
+
+            .card-header {
+                padding: 20px 20px;
+                margin-bottom: 0;
+                background-color: #fff;
+                border-bottom: 1px solid #ebecf0;
+
+                &:first-child {
+                    border-radius: calc(.37rem - 1px) calc(.37rem - 1px) 0 0;
+                }
+            }
+
+            .table th,
+            .table td {
+                padding: .75rem;
+                vertical-align: top;
+                border-top: 1px solid #dee2e6;
+            }
+
+            .product-table-title {
+                font-size: 15px;
+            }
+        }
+
+        .itemside {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+
+            .aside {
+                position: relative;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+
+            .info {
+                padding-left: 15px;
+                padding-right: 7px;
+            }
+        }
+
+        .box {
+            padding: 18px;
+            background: #fff;
+            border: 1px solid #e5e7ea;
+        }
+
+        .img-lg {
+            width: 50px;
+            height: 60px;
+        }
+
+        .img-xs {
+            width: 40px;
+            height: 40px;
+        }
+
+        .img-sm {
+            width: 80px;
+            height: 80px;
+        }
+
+        .img-md {
+            width: 140px;
+            height: 140px;
+        }
+    }
+}
+
+#rating {
+    .rating {
+        position: relative;
+        width: 250px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .3em;
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 2px #b3acac;
+    }
+
+    .rating__result {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(0px) translateX(3px);
+        // z-index: -9;
+        font: 2.3em Arial, Helvetica, sans-serif;
+        color: #ebebebc9;
+        pointer-events: none;
+    }
+
+    .rating__star {
+        font-size: 2em;
+        cursor: pointer;
+        color: #dabd18;
+        transition: filter linear .3s;
+    }
+
+    .rating__star:hover {
+        filter: drop-shadow(1px 1px 4px gold);
+    }
+}
+
+
+@media (min-width: 576px) {
+    .account {
+        .card-group {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        }
+
+        .card-group>.card:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .card-group>.card {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+// Admin LTE
+@import '~admin-lte/dist/css/adminlte.css';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~owl.carousel/dist/assets/owl.carousel.min.css';
+
+
+// Font Awesome
+$fa-font-path: "../webfonts";
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "~line-awesome/dist/line-awesome/css/line-awesome.min.css";
+@import "~line-awesome/dist/font-awesome-line-awesome/css/all.min.css";
+
+
+.success__response {
+    color: green;
+    border: 1px solid green;
+}
+
+.error__response {
+    color: red;
+    border: 1px solid red;
+}
